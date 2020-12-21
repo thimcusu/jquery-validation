@@ -1,0 +1,36 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+body {
+  background-color: #f8f8f8;
+}
+header {
+  .logo {
+    width: 110;
+    img {
+      max-width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+}
+.main {
+  margin: 30px 20px;
+}
+.wrapper {
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 3px 0 10px #464646;
+  background-color: #fff;
+}
+.form-register {
+  .form-item {
+    margin-bottom: 10px;
+    .label {
+      display: inline-block;
+      margin-bottom: 1;
+    }
+  }
+}

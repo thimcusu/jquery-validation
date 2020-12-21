@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ec-Store Mall</title>
+    <link rel="stylesheet" href="./assets/styles/index.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="./assets/images/logo.svg" alt="Logo" class="logo">
+        </div>
+    </header>
+    <div class="main">
+        <div class="wrapper">
+            <form class="form-register" id="u-form-register">
+                <h3 class="title">アカウントを作成</h3>
+                <div class="form-item">
+                    <label class="label" for="username">ユーザーネーム</label>
+                    <input type="text" class="form-input" id="user-name" name="user">
+                    <small id="alert-user-name"></small>
+                </div>
+                <div class="form-item">
+                    <label class="label" for="email">メールアドレス</label>
+                    <input type="text" class="form-input" id="email" name="email">
+                    <small id="alert-email"></small>
+                </div>
+                <div class="form-item">
+                    <label class="label" for="password">パスワード</label>
+                    <div class="input">
+                        <input type="password" class="form-input" id="password" name="password">
+                        <button type="button" class="show u-password" tabindex="-1"></button>
+                    </div>
+                    <small id="alert-password"></small>
+                </div>
+                <div class="form-item last">
+                    <label class="label"for="re-password">ユーザーネーム</label>
+                    <div class="input">
+                        <input type="password" class="form-input" id="re-password" name="rePassword">
+                        <button type="button" class="show u-re-password" tabindex="-1"></button>
+                    </div>
+                    <small id="alert-re-password"></small>
+                </div>
+                <div class="title-button policy">
+                    <span>作成すると当社の<a href="#">利用規約</a>および</span>
+                    <span><a href="#">プライバシーポリシー</a>に同意したとみなされます。</span>
+                </div>
+                <button disabled type="submit" class="register" >アカウントを作成する</button>
+                <div class="title-button login-mark">
+                    <span> 既にアカウントをお持ちですか？</span>
+                </div>
+                <button type="button" class="login">ログイン</button>
+            </form>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
